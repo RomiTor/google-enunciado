@@ -1,0 +1,77 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+img{
+	width: 90%;
+	height: auto;
+	}
+.text-small{
+	font-family: $font;
+}
+header{
+	text-align: center;
+	padding: $padding;
+	img{
+		width: 50%;
+		height: auto;
+	}
+	ul{
+		max-width: 60%;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+.podcast{
+	padding: $padding;
+}
+.linea{
+	margin: $padding;
+	width: 85%;
+	height: 3px;
+	background-color: $color_azul;
+}
+.news{
+	padding: $padding;
+	
+	.text-blue{
+		text-align: right;
+		color: $color_azul;
+	}
+
+	$var: true !default; 
+	@if $var == true {
+	  	.gray{
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			background-color: $color_gray;
+			img{
+			width: 68px;
+			height: auto;
+			}
+		}
+	}
+	
+
+}
+.porfolio{
+	padding: $padding;
+}
+.info{
+	padding: $padding;
+	.bold{
+		font-weight: bold;
+	}
+}
+footer{
+	padding: $padding;
+	display: flex;
+	justify-content: space-between;
+	img{
+		width: 60px;
+		height: 60px;
+	}
+}
